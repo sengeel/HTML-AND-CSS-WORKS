@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+   width: 100%;
+   min-height: 100vh;
+   background-color: #145da0;
+   color: white;
+   position: absolute;
+}
+nav{
+    background-color: darkblue;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    /* height: 25vh; */
+}
+.logo{
+    width: 130px;
+    border-radius: 190%;
+    background-color: white;
+    padding: 0.4em;
+}
+.user-pic{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 2s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%));
+
+    padding: 20px;
+    margin: 10px;
+    border-radius: 1em;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h2{
+    color: white;
+    font-weight: 3;
+}
+.user-info h2:hover{
+    background: darkblue;
+    border-radius: 1em;
+    color: white;
+    padding: 0.3em;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 1em;
+    margin-right: 15px;
+    padding: 1px;
+    background: white;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: white;
+    margin: 15px 0 10px;
+
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+    color: white;
+}
+.sub-menu-link img{
+    width: 80px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    margin-right: 15px;
+}
+.sub-menu-link span{
+    transition: transform 0.5s;
+    font-size: 25px;
+}
+.sub-menu-link span:hover{
+    transform: translateX(5px);
+}
+#home{
+     text-align: center; 
+     justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+
+#home h3{
+    color: aqua;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    
+}
+
+#home p{
+    padding-top: 10px;
+    color: darkturquoise;
+}
+
+#about{
+    text-align: center;
+    padding-top: 4em;
+
+}
+
+#about h3{
+    color: aqua;
+    padding: 2em;
+    text-decoration: underline;
+}
+
+#about img{
+    width: 260px;
+    padding: 0.2em;
+    float: left;
+}
+#about p{
+    color: darkturquoise;
+}
+
+#skills{
+    text-align: center;
+    padding: 6em;
+}
+
+#skills h3{
+    color: aqua;
+    padding: 1em;
+    text-decoration: underline;
+}
+
+#skills p{
+    padding: 1.3em;
+    cursor: pointer;
+    color: darkturquoise;
+}
+
+#a:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#b:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#c:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#d:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#e:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#f:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#g:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#h:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#i:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#j:hover{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+
+#contact{
+    text-align: center;
+    padding: 1em;
+    color: aqua;
+    padding-top: 100px;
+}
+#contact p{
+    color: darkturquoise;
+}
+#contact h3{
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+#contact p:hover{
+    font-weight: 900;
+}
+
+#portfolio h3{
+    padding: 1em;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1px;
+    color: aqua;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+}
+#portfolio .display{
+    position: relative;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+#portfolio .overlay{
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%));
+    width: 10px 0%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 1em;
+    transition: 1s;
+    color: blue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding-top: 10px;
+}
+#portfolio .overlay:hover{
+    opacity: 2;
+}
+#portfolio img{
+    display: block; 
+     width: 100%;
+} 
+#portfolio p{
+    color: white;
+}
+#portfolio{
+    margin-bottom: 20px;
+    margin-top: 40px;
+   padding-top: 100px; 
+}
+#portfolio .overlay h4{
+    margin: 0.1em;
+    text-align: center;
+    color: white;
+}
+#portfolio .displayy{
+    position: relative;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.car{
+    display: flex;
+    flex-direction: row; 
+}
+#portfolio .overlayy h4{
+    margin: 0.1em;
+    text-align: center;
+    color: white;
+}
+#portfolio .overlayy{
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%));
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 1em;
+    transition: 1s;
+    color: blue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+    justify-content: center;
+    padding-top: 10px;
+}
+#portfolio .overlayy:hover{
+    opacity: 2;
+}
+
+
+footer .close{
+    margin-top: 17em;
+    background-color: darkblue; 
+    display: flex;
+    align-items: center;
+    height: 35vh;
+}
+footer li{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+    color: aquamarine;
+    font-family: cursive;
+}
+footer .location{
+    color: aquamarine;
+    font-family: cursive;
+    padding-right: 30px;
+    padding-left: 4px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.line1{
+    border: 4px solid lightblue;
+    border-radius: 1em;
+}
+.line{
+    border: 4px solid lightblue;
+    border-radius: 1em;
+}
+footer .socials{
+    display: block;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px; 
+}
+footer .media{
+    display: block;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;  
+    right: auto;
+}
+footer .rights{
+    color: aquamarine;
+    font-family: cursive;
+    text-align: center;
+   
+}
+footer{
+    background-color: darkblue;
+}
+

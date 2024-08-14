@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: 
+    #98d7c2;
+}
+nav{
+    background-color: #167d7f;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    height: 15vh;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+    padding: 0.4em;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+}
+nav #home{
+    background-color:#98d7c2 ;
+    font-weight: 700;
+}
+nav a:hover{
+    background-color: #98d7c2;
+    color: aquamarine;
+    padding: 0.5em;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+ul.dropwon li{
+    display: block;
+}
+ul.dropdown{
+    /* width: 100%; */
+    position: absolute;
+    display: none;
+    text-align: center;
+    background-color: #167d7f;
+}
+section{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #167d7f;
+    padding-top: 20%;
+}
+.container{
+    padding: 2em;
+    text-align: center;
+}
+.container .line{
+    border: 4px solid white;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+.work{
+    padding: 1em;
+}
+.hire{
+    border: 4px solid #167d7f;
+    margin-right: 0.5em;
+}
+#view{
+    border: 4px solid #167d7f;
+    margin-right: 0.5em;
+}
+.work ul li{
+    display: inline-block;
+    position: relative;
+}
+.work ul li a{
+    text-decoration: none;
+    color: #167d7f;
+    text-align: center;
+    font-weight: 800;
+    padding: 0.5em;
+    display: block;
+}
+.work ul li ul.list li{
+    display: block;
+}
+.work ul li ul.list{
+    width: 100%;
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+.work ul li a:hover{
+    background-color: white;
+    color: black;
+     padding: 0.2em; 
+    font-weight: 800;
+}
+.work ul li:hover ul.list{
+    display: block;
+}
+#about{
+    text-align: center;
+    padding: 1em;
+}
+#about h3{
+    text-decoration: underline;
+    color: #167d7f;
+    padding-bottom: 1em;
+}
+#about p{
+    color: aliceblue;
+}
+footer{
+    text-align: center;
+    color: #167d7f;
+    background-color: aliceblue;
+    height: 10vh;
+    padding: 10px;
+}
+

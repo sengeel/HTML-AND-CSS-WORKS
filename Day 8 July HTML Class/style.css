@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0.2em;
+    color: white;
+    background-image: linear-gradient(rgb(168, 87, 164), rgb(168, 3, 96), rgb(246, 127, 9), rgb(246, 127, 9));
+    height: 15vh;
+}
+nav img{
+    color: aqua;
+    border-radius: 0.5em;
+    border: 4px solid coral ;
+    padding: 0.2em;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 0.5em;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    font-weight: 900;
+    color: black;
+}
+#container{
+    justify-content: space-between;
+    margin: 0.5em;
+    display: flex;
+}
+#container img{
+    width: 100%;
+    border-radius: 0.5em;
+}
+#container p:hover{
+    font-weight: 900;
+    color: aqua;
+}
+#container p{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+.shoe{
+    width: 30%;
+     background-image: linear-gradient(rgb(168, 87, 164), rgb(168, 3, 96), rgb(246, 127, 9), rgb(246, 127, 9)); 
+    height: 40%;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 4px 4px black;
+}
+.shoe a{
+    text-decoration: none;
+}
+#overview{
+    text-align: center;
+    padding-top: 1em;
+}
+#overview h2{
+    text-decoration: underline;
+    color:  orange;
+}
+#overview p{
+    color: purple;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#about{
+    text-align: center;
+    padding: 1em;
+}
+#about h2{
+    color: blue;
+    text-decoration: underline;
+}
+#about p{
+    color: green;
+}
+#contact{
+    text-align: center;
+    padding-top: 10px;
+}
+#contact h2{
+   text-decoration: underline; 
+   color: darkgoldenrod;
+}
+#contact p{
+    color: darkcyan;
+}
+#contact p:hover{
+    font-weight: 900;
+}
+#feedback{
+    text-align: center;
+    padding-top: 20px;
+}
+#feedback h2{
+    color: coral;
+    text-decoration: underline;
+}
+#feedback p{
+    color: salmon;
+}
+footer{
+    text-align: center;
+    background-color: burlywood;
+    height: 15vh;
+    padding: 1.5em;
+    color: indianred;
+    font-size: 20px;
+    
+}
+#discount{
+    text-align: center;
+    padding-top: 40px;
+}
+#discount h2{
+    text-decoration: underline;
+    color: orange;
+}
+#discount p{
+    color: purple;
+}
+#promo{
+    text-align: center;
+    padding-top: 40px;
+}
+#promo h2{
+    text-decoration: underline;
+    color: orange;
+}
+#promo p{
+    color: purple  ;
+}

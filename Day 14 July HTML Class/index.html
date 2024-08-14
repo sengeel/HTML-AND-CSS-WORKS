@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <img src="" alt="">
+    
+    <header class="hero" id="home">
+        <nav>
+            <img src="images/IMG_1662550797854.jpg" class="logo">
+
+
+            <ul>
+                <li><a href="#home"><img src="images/icons8-house-48.png" width="50px"></a></li>
+            </ul>
+
+            <img src="images/icons8-left-click-48.png" width="50px" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/icons8-widgetsmith-48.png">
+
+                        <h2>Chizurum O.O</h2>
+                    </div>
+                    <hr>
+                    <a href="#about" class="sub-menu-link">
+                        <img src="images/IMG_1662550797854.jpg" width="30px">
+                        <p>About Chizurum O.O</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#about" class="sub-menu-link">
+                        <img src="images/icons8-working-with-a-laptop-48.png" width="30px">
+                        <p>My Portfolio</p>
+                        <span>></span>
+                           </a>
+
+                        <a href="#about" class="sub-menu-link">
+                            <img src="images/icons8-dashboard-layout-48.png" width="30px">
+                            <p>My Skills</p>
+                            <span>></span>
+                            </a>
+
+                            <a href="#about" class="sub-menu-link">
+                                <img src="images/icons8-call-48.png" width="30px">
+                                <p>Hire Me</p>
+                                <span>></span>
+                            </a>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+</body>
+</html>

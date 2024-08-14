@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+
+}
+nav{
+    background-image: linear-gradient(rgba(0, 0, 0, 50%), rgba(0,0,0,20%));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    background: black;
+    border-radius: 5px;
+    color: darkkhaki;
+    padding: 5px;
+}
+section{
+    
+   
+    padding-top: 30%;
+    padding-right: 10px;
+    padding-bottom: 0;
+    padding-left: 10px;
+    
+}
+#about{
+    text-align: center;
+    padding-top: 20%;
+    
+}
+#about h2{
+    color: darkkhaki;
+    text-decoration: underline;
+    padding: 10px;
+}
+#skills{
+    text-align: center;
+    padding-top: 20%;
+}
+#skills ol{
+    list-style-type: none;
+}
+#skills h2{
+    color: darkkhaki;
+    text-decoration: underline;
+    padding: 20px;
+}
+#skills li{
+    padding: 0.5em;
+}
+#skills li:hover{
+    font-weight: 900;
+    color: darkkhaki;
+}
+#contact{
+    text-align: center;
+}
+#contact h2{
+    color: darkkhaki;
+    text-decoration: underline;
+    padding: 20px;
+}
+#contact table{
+    margin: 20px auto;
+    border: red;
+    border: 4px solid darkkhaki
+}
+#contact table th{
+    color: gold;
+    padding: 10px;
+}
+#contact table td{
+    color: blue;
+    padding: 10px;
+}
+footer{
+    background-color: aqua;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+}

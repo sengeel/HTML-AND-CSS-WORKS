@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+nav{
+    background-color: darkkhaki;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    background-color: black;
+    border-radius: 5px;
+    color: blue;
+    padding: 5px;
+}
+section{
+    height: 20vh;
+    padding: 20px 0 20px 0 ;
+}
+#about{
+    text-align: center;
+}
+#about h2{
+    color: darkkhaki;
+    text-decoration: underline;
+    padding: 10px;
+}
+#skills{
+    text-align: center;
+    padding: 10px;
+}
+#skills ol{
+    list-style-type: none;
+}
+#skills h2{
+    color: gold;
+    text-decoration: underline;
+    padding: 20px;
+}
+#skills li:hover{
+    font-weight: 900;
+    color: gold;
+}
+#contact{
+    text-align: center;
+    padding: 20px;
+}
+#contact h2{
+    color: gold;
+    text-decoration: underline;
+    padding: 20px;
+}
+#contact p:hover{
+    font-weight: 900;
+    color: gold;
+}
+#contact table{
+    color: darkcyan;
+}
+#contact table:hover{
+    font-weight: 900;
+    color: darkcyan;
+}
+footer{
+    color: blue;
+}
+
+
+
+
+

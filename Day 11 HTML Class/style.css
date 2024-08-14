@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #f2ead3;
+}
+nav{
+    background-color: #dfd7bf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+nav .line{
+    width: 30px;
+    height: 5px;
+    background-color: #3f2305;
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+.my-line{
+    display: none;
+}
+@media(max-width: 650px){
+    .my-line {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 40px 0;
+    }
+
+     header{
+        position: relative;
+    } 
+
+     nav{
+         flex-direction: column; 
+        align-items: flex-start;
+        height: auto;
+        border-radius: 1em;
+       
+    }
+
+     nav ul{
+        flex-direction: column;
+        width: 100vh;
+        display: none;
+        text-align: left;
+    }
+
+     nav li{
+        border-top: 1px solid #3f2305;
+        padding: 10px 30px;
+        margin: 0;
+        border-radius: 1em;
+    }
+
+    .active{
+        display: block;
+    }
+}
+ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: #3f2305;
+    font-weight: 700;
+}
+nav a:hover{
+    font-weight: 900;
+    color: darkkhaki;
+    border: solid gold;
+    padding: 8px;
+}
+#overview{
+    color: #3f2305;
+    padding-top: 8em;
+    text-align: center;
+}
+#overview h3{
+    font-weight: 900;
+    padding: 1em;
+    text-decoration: underline;
+}
+#skills{
+    color: #3f2305;
+    padding-top: 1em;
+    text-align: center;
+    padding: 100px;
+}
+#skills h3{
+    padding: 1em;
+    text-decoration: underline;
+}
+#skills p{
+    padding: 0.3em;
+}
+#about{
+    text-align: center;
+    padding-top: 100px;
+    color: #3f2305;
+}
+#about h3{
+    text-decoration: underline;
+    padding: 20px;
+    color: #3f2305;
+}
+#portfolio h3{
+    padding: 1em;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+}
+#portfolio .display{
+    position: relative;
+    margin: 0.1em;
+}
+#portfolio .overlay{
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,10%));
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 1em;
+    transition: 1s;
+    color: blue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 4em;
+    padding-top: 10px;
+}
+#portfolio .overlay:hover{
+    opacity: 2;
+}
+#portfolio img{
+    display: block; 
+     width: 100%;
+} 
+#portfolio p{
+    color: blue;
+}
+#portfolio{
+    margin-bottom: 20px;
+    margin-top: 40px;
+   padding-top: 100px; 
+}
+#portfolio .overlay h4{
+    margin: 0.5em;
+    text-align: center;
+}
+#contact{
+    text-align: center;
+    padding: 1em;
+    color: #3f2305;
+}
+#contact h3{
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+#contact p:hover{
+    font-weight: 900;
+}
+.slider{
+    background-image: linear-gradient(rgba(0,0,0,10%), rgba(0,0,0,50%));
+    margin-top: 50px;
+    position: fixed;
+    width: 100%;
+}
+footer .close{
+    margin-top: 17em;
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    height: 35vh;
+}
+footer li{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: cursive;
+}
+footer .location{
+    color: aliceblue;
+    font-family: cursive;
+    padding-right: 30px;
+    padding-left: 4px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.line1{
+    border: 4px solid aliceblue;
+    border-radius: 1em;
+}
+.line{
+    border: 4px solid aliceblue;
+    border-radius: 1em;
+}
+footer .socials{
+    display: block;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px; 
+}
+footer .media{
+    display: block;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;  
+    right: auto;
+}
+footer .rights{
+    color: aliceblue;
+    font-family: cursive;
+    text-align: center;
+   
+}
+footer{
+    background-color: black;
+
+}
